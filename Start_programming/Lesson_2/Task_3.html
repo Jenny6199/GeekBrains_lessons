@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+    var number = (Math.random()*100).toFixed(0);
+    document.write("Было загадано целое число от 0 до 100" + "<br/>" + "Попробуете угадать..." + "<br/>");
+    var choose = +prompt("Введите Ваш ответ: ");
+    if (choose == number){
+        document.write(" Вы угадали! Поздравляю!");
+    } else if (choose > number) {
+        document.write("Загаданное число меньше.");
+    } else {
+        document.write("Загаданное число больше.");
+    }
+</script>

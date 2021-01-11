@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+
+
+	document.write("Bank count" + "<br/>");
+	var smm = +prompt("Start count : ");
+	var pers = +prompt("Percents : ");
+
+	document.write("Start count : " + smm + " rubles." + "<br/>");
+	document.write("Percents : " + pers + "%." + "<br/>");
+	for(let i = 1; i<6; i++){
+		document.write("Year : " + i + ": " + "Count : " + smm.toFixed(2) + " , " + "Percents : " + (smm/100*pers).toFixed(2) + "<br/>");
+			smm = smm+(smm/100*pers);
+		}
+
+</script>

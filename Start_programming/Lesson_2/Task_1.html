@@ -1,0 +1,61 @@
+﻿<meta charset="utf-8">
+
+<script type="text/javascript">
+
+alert("Попробуйте разгадать несколько загадок.")
+
+
+
+
+let zagadki = [
+	
+	"Загадка 1: Кто от бабушки ушел и от дедушки ушел?",
+	
+	"Загадка 2: Что за дед во сто шуб одет?",
+	"Загадка 3: Сколько месяцев в году?",
+	"Загадка 4: Кто приносит подарки в новый год?"
+
+	];
+
+
+
+let answers = [
+	
+	"колобок",
+
+	"лук",
+
+	"12",
+	"дед мороз"
+	];
+let plus = 0;
+
+
+
+
+for (let i=0; i < zagadki.length; i++){
+	
+	document.write("<br/>" + zagadki[i]);
+
+	alert(zagadki[i]);	
+	let user_answer = prompt("Введите Ваш ответ: ");
+
+	document.write("<br/>" + "Ваш ответ : " + user_answer.toLowerCase())
+
+;	
+	if(user_answer.toLowerCase() == answers[i]){
+
+		document.write("<br/>" + "Поздравляю! Вы ответили правильно!");
+		plus++;
+
+	} else {
+		
+		document.write("<br/>" + "К сожалению это неверный ответ" + "<br/>" +"Правильный ответ - " + answers[i]);
+	
+	}
+
+
+}
+document.write("<br/>" + "Загадки закончились." + "<br/>" + "Вы угадали : " + plus + "<br/>" + "Программа завершает свою работу, до свидания!")
+
+</script>
