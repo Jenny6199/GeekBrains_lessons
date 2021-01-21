@@ -1,7 +1,12 @@
+"""Autor: Maksim Sapunov msdir6199@gmail.com"""
+
+# Открываем файл для чтения
 with open('text6.txt', 'r') as f:
 	content = f.readlines()
-
+# Cоздаем пустой словарь
 my_dict = {}
+
+# Парсим строку в повторных циклах
 for line in content:
 	divide_line = line.split(':')
 	l = len(divide_line[1])
@@ -24,4 +29,5 @@ for line in content:
 	for value in integer:
 		sum_lesson += value
 	my_dict[divide_line[0]] = sum_lesson
+# Распечатываем словарь
 print(my_dict)
