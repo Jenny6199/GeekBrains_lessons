@@ -45,3 +45,4 @@ minimum = int(input('Укажите барьерное значение окла
 # основной блок программы
 data = staff_info(work_file)
 print(f'Средняя зарплата сотрудников составляет - {show_info(data, minimum)} руб.')
+

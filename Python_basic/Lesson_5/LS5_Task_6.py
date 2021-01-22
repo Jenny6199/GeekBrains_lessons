@@ -38,3 +38,4 @@ for line in content:
 	study_dict[divide_line[0]] = sum_lesson
 
 print(study_dict)  # Распечатываем словарь.
+

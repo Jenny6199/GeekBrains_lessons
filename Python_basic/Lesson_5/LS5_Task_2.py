@@ -19,3 +19,4 @@ line_number = 1  # Создаем счетчик строк
 for line in content:  # В цикле с использованием функции проводим подсчет количества слов в строке
     print(f'В строке # {line_number} - {how_much_words(line)} слов.')
     line_number += 1
+

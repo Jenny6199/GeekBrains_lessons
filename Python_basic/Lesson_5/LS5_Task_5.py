@@ -22,3 +22,4 @@ try:
     f.close()
 except IOError:
     print('Ошибка ввода-вывода! Данные не сохранены.')
+

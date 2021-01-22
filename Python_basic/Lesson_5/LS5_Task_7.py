@@ -31,3 +31,4 @@ with open(file_path, 'r') as f_data:
 
 with open('form_task_7.json', 'w') as f_obj:  # Сохраняем данные в файл как объект json
     json.dump(firm_profit, f_obj)
+
