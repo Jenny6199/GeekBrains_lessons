@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+
+    function get_array(n){
+        let array = [0]*n;
+        for (var i; i<n; i++){
+            array[i] = i;
+        }
+        alert(array);
+    }
+
+get_array(10);
+
+</script>
+            
